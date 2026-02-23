@@ -10,12 +10,12 @@ Using an SVOD3 Programmer, the BIOS firmware was successfully restored.
 ## 🛑 Problem Statement
 - PC failed to boot: no video, no POST, no beeps.
 - Standard troubleshooting steps (RAM swap, PSU test, CMOS battery removal, spare CPU) did not resolve the issue.
-- Diagnosis pointed to a corrupted BIOS firmware.
+- Diagnosis pointed to a corrupted BIOS firmware. -> https://github.com/francoameri/case-studies/blob/main/hardware-recovery/bricked-bios-svod3/images/CMOS.webp
 
 ---
 
 ## 🔧 Tools & Materials
-- **SVOD3 Programmer** (external programmer for CMOS chips)
+- **SVOD3 Programmer** (external programmer for CMOS chips) - > https://github.com/francoameri/case-studies/blob/main/hardware-recovery/bricked-bios-svod3/images/SVOD.jpg
 - CMOS chip from the affected motherboard
 - Correct BIOS firmware (downloaded from vendor support site)
 - Basic electronics toolkit (chip removal tools, anti-static setup)
@@ -26,7 +26,7 @@ Using an SVOD3 Programmer, the BIOS firmware was successfully restored.
 1. **Identify the CMOS chip** on the motherboard.
 2. **Remove the chip** carefully using proper tools.
 3. **Load the firmware**: Downloaded the correct BIOS/UEFI image from the manufacturer.
-4. **Flash the chip** using the SVOD3 Programmer.
+4. **Flash the chip** using the SVOD3 Programmer. -> https://github.com/francoameri/case-studies/blob/main/hardware-recovery/bricked-bios-svod3/images/Write.png
 5. **Reinstall the chip** back onto the motherboard.
 6. **Test the system**: Power on → successful POST → system restored.
 
