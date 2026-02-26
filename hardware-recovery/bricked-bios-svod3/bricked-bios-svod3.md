@@ -16,6 +16,19 @@ Using an SVOD3 Programmer, the BIOS firmware was successfully restored.
 
 ---
 
+💾 BIOS/UEFI & CMOS Sizes
+- BIOS/UEFI firmware is stored on a non-volatile memory chip (often SPI flash).
+- Typical sizes range from 1 MB to 32 MB depending on motherboard generation and vendor.
+- CMOS refers to a small memory area powered by the battery, storing configuration settings (boot order, time/date, hardware parameters).
+- CMOS size is much smaller — usually 64 KB or less — compared to BIOS/UEFI flash storage.
+- Key distinction:
+- BIOS/UEFI = firmware image (large, stored in flash).
+- CMOS = settings data (tiny, volatile, battery-backed).
+
+![Sizes](images/BIOS%20UEFI%20Sizes.png)
+
+---
+
 ## 🔧 Tools & Materials
 - **SVOD3 Programmer** (external programmer for CMOS chips)
 - CMOS chip from the affected motherboard
