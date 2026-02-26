@@ -4,11 +4,15 @@
 - Criticality: RustDesk was essential for daily operations; outage impacted all PCs simultaneously.
 - Infrastructure: Router configured with 3 ISPs in high availability (HA).
 
+![ISP HA](https://github.com/francoameri/case-studies/blob/main/rustdesk-connectivity-failure/images/ISP-HA.png?raw=true)
+
 ⚠️ Symptoms
 - RustDesk offline across all production PCs.
 - Application update did not resolve the issue.
 - RustDesk servers confirmed online.
 - No similar cases documented in forums or community channels.
+
+![Rustdesk](images/Rustdesk.png)
 
 🔍 Initial Hypotheses (Layer 7 – Application)
 - Software malfunction → disproven after update.
@@ -18,6 +22,8 @@
 🌐 Refined Hypothesis (Layer 3 – Network)
 - Suspected WAN routing issue tied to one ISP.
 - Approach: isolate ISPs one by one while maintaining business continuity.
+
+![OSI](images/OSI.jpg)
 
 ✅ Resolution
 - Disconnected ISPs sequentially.
