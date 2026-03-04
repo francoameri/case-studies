@@ -21,7 +21,7 @@ In a previous role, I encountered recurring connectivity issues in a /24 network
 - Range & Subnet: APIPA uses the reserved block 169.254.0.1 – 169.254.255.254 with a 255.255.0.0 subnet mask.
 - Purpose: Ensures local communication between devices on the same subnet when DHCP is unavailable.
 - Limitations: APIPA addresses are non-routable—they cannot access the Internet or communicate outside the local link.
-- Diagnostic Value: The presence of APIPA often indicates DHCP failure, NIC or TCP/IP stack issues, or IP pool exhaustion.
+- Diagnostic Value: The presence of APIPA often indicates DHCP failure, NIC or TCP/IP stack issues, or IP pool exhaustion from DHCP.
 
 ![APIPADHCP](images/DHCPAPIPA.jpg)
 
