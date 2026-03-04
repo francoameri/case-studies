@@ -5,6 +5,8 @@ In a previous role, I encountered recurring connectivity issues in a /24 network
 - DHCP lease times were configured too long, preventing IPs from being released quickly enough.
 - As a result, new devices joining the network couldn’t obtain valid addresses and fell back to APIPA.
 - The /24 subnet (254 usable IPs) was insufficient for the growing environment.
+
+![APIPA](images/apipa.png)
   
 🛠️ Solution
 - Adjusted DHCP lease times to better match device usage patterns.
