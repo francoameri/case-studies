@@ -74,3 +74,7 @@ Using an SVOD3 Programmer, the BIOS firmware was successfully restored.
 ## 🤝 Discussion
 Have you ever revived hardware or infrastructure against the odds?  
 Share your experiences or improvements to this workflow!
+
+- 💼 [LinkedIn](https://linkedin.com/in/fameri)  
+- 🌐 [GitHub](https://github.com/francoameri)  
+- ✉️ famerisbraccia@gmail.com  
