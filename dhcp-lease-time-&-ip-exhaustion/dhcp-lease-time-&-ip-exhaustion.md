@@ -55,3 +55,8 @@ Hosts:   510 usable
 - APIPA isn’t just an annoyance—it’s a diagnostic signal that DHCP or IP allocation needs attention.
 - Proper lease time configuration is critical in dynamic environments.
 - Subnet sizing must evolve with infrastructure growth.
+
+---
+
+🌟 Impact Statement
+By reconfiguring DHCP lease times and expanding the subnet from /24 to /23, I eliminated recurring APIPA assignments, improved network reliability, and established proactive monitoring practices. This reduced troubleshooting overhead, ensured scalability for future growth, and demonstrated architect‑level foresight in capacity planning.
