@@ -277,13 +277,6 @@ This distinction is critical in architectural design. FT is chosen when *zero do
 - **HA = practical resilience, but downtime + memory loss.**  
 - **Architect’s decision = balance between budget, workload criticality, and operational resilience.**
 
-This comparative study demonstrates how theoretical paradigms translate into practical infrastructure design. The choice of FT or HA depends not only on technical feasibility but also on organizational priorities and budget constraints.
-
-## ✅ Conclusion
-- **FT = seamless continuity, but costly.**  
-- **HA = practical resilience, but downtime + memory loss.**  
-- **Architect’s decision = balance between budget, workload criticality, and operational resilience.**
-
 ### 🔎 Final Thoughts
 For **technical colleagues**, this essay highlights the architectural trade‑offs between FT and HA, showing how design choices ripple across compute, network, and storage. It provides a framework for evaluating resilience strategies in real deployments.  
 
