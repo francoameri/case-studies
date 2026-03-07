@@ -26,6 +26,43 @@ This document is intended for:
 
 ---
 
+## 🧪 Methodology
+
+This essay follows a structured approach to distinguish **Fault Tolerance (FT)** and **High Availability (HA)** in virtualized infrastructure. The methodology combines **theoretical analysis** with **practical case studies**, ensuring that both academic precision and real-world applicability are addressed.
+
+### 🔎 Analytical Steps
+1. **Conceptual Definition:**  
+   Establish clear theoretical distinctions between FT and HA, focusing on continuity vs recovery, operational aims, and resilience paradigms.
+
+2. **Illustrative Examples:**  
+   Provide everyday infrastructure analogies (e.g., RAID mirroring, PSU redundancy, ISP failover) to delimit the difference between FT and HA beyond hypervisors.
+
+3. **Service Level Expectations:**  
+   Translate availability percentages into measurable downtime equivalents, grounding abstract targets in practical terms.
+
+4. **Case Studies:**  
+   Examine VMware FT, Nutanix HCI, and Proxmox VE clusters as representative platforms. Each case study includes mechanism, advantages, disadvantages, and resource requirements.
+
+5. **Comparative Analysis:**  
+   Present a tabular comparison across key aspects (downtime, data integrity, hardware, cost, scalability, operational aim, network, storage). Expand with detailed explanations for each dimension.
+
+6. **Conceptual Comparison:**  
+   Distill the essence of FT vs HA into memorable insights (FT = continuity of state, HA = continuity of service).
+
+7. **Discussion:**  
+   Reflect on strategic implications, including cost, scalability, workload criticality, and hybrid approaches that combine HA with selective FT.
+
+8. **Conclusion:**  
+   Summarize findings for dual audiences — technical colleagues (architectural trade-offs) and recruiters/managers (strategic decision-making).
+
+### 🎯 Purpose of Methodology
+By following this sequence, the essay ensures:
+- **Academic rigor:** Clear definitions, structured analysis, and contextual boundaries.  
+- **Practical relevance:** Real-world case studies and examples that resonate with IT professionals.  
+- **Decision-making support:** Comparative insights that guide architects, engineers, and managers in choosing between FT and HA.  
+
+---
+
 ## 🧩 Theoretical Framework
 - 🛡️ **Fault Tolerance (FT):** Systems continue operating seamlessly despite component failure. Achieved by maintaining a secondary execution environment in lockstep with the primary, preserving both disk and memory state.  
   - **Operational Aim:** *100% uptime* — uninterrupted service continuity.  
@@ -212,4 +249,5 @@ Ultimately, this study bridges **theory and practice**, offering a reproducible 
 
 ## 🗝️ Keywords
 
-> Fault Tolerance, High Availability, VMware FT, Nutanix HCI, Proxmox VE, Replication Factor, Self-Healing Storage, HA Manager, Fencing, SAN, vSAN, Ceph, ZFS, Infrastructure Resilience, Uptime, Downtime
+> Fault Tolerance (FT), High Availability (HA), VMware FT, Nutanix HCI, Proxmox VE, Hyper-Converged Infrastructure (HCI), Replication Factor (RF2/RF3), Self-Healing Storage, HA Manager, Fencing, SAN, vSAN, Ceph, ZFS, NFS, Cluster Quorum, Infrastructure Resilience, Uptime, Downtime, Continuity of State, Continuity of Service, Mission-Critical Workloads, Scalability, Cost Efficiency, Architectural Trade-offs
+
