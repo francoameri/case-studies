@@ -233,6 +233,36 @@ In essence:
 
 This distinction is critical in architectural design. FT is chosen when *zero downtime* is mandatory, while HA is chosen when *short downtime* is acceptable but scalability and cost efficiency are priorities.
 
+### 📊 Visual Comparison
+
+- 🛡️ FT Timeline (Continuity of State):
+```
+[Normal Operation] ──X── [Failure Event] ──► [Secondary VM already running]
+                     │
+                     │ Instant failover
+                     ▼
+[Service continues seamlessly, no downtime]
+```
+
+> FT = continuity of state (no downtime, memory preserved).
+
+- ⏱️ HA Timeline (Continuity of Service):
+```
+[Normal Operation] ──X── [Failure Event] ──► [VM Restart on surviving node]
+                     │
+                     │ Short downtime (30–180s)
+                     ▼
+[Service resumes, memory state lost]
+```
+
+> HA = continuity of service (short downtime, memory lost).
+
+**Caption:**  
+- **Fault Tolerance (FT):** Continuity of state — the system keeps running with no interruption.  
+- **High Availability (HA):** Continuity of service — the system restarts quickly, but memory state is lost.  
+
+*This diagram illustrates the conceptual difference: FT prevents downtime entirely, while HA accepts short downtime but ensures rapid recovery.*
+
 ---
 
 ## 🧭 Discussion
@@ -259,9 +289,17 @@ For **technical colleagues**, this essay highlights the architectural trade‑of
 
 For **recruiters and managers**, the comparison demonstrates strategic thinking: weighing cost, scalability, and operational aims against workload criticality. It signals the ability to translate technical paradigms into business‑level decisions.  
 
-Ultimately, this study bridges **theory and practice**, offering a reproducible way to distinguish FT and HA and apply them in infrastructure design.
+### 📑 SLA Perspective
+Service Level Agreements (SLAs) are where technical design meets contractual obligation:  
+- **FT in SLA terms:** Rarely formalized, since guaranteeing *absolute zero downtime* is impractical at scale. Instead, FT is applied selectively to mission‑critical workloads where downtime is unacceptable.  
+- **HA in SLA terms:** Commonly reflected in SLAs as 99.9% or 99.99% uptime guarantees. These agreements acknowledge short interruptions but commit to rapid recovery, often with penalties or credits if thresholds are exceeded.  
+- **Strategic Insight:** SLAs remind architects that resilience is not only about technology, but also about aligning infrastructure with business expectations and customer tolerance for downtime.  
+
+### 🌟 Closing Note
+Ultimately, this study bridges **theory and practice**, offering a clear way to distinguish FT and HA and apply them in infrastructure design. Whether read by engineers, architects, or recruiters, the message is the same: resilience is a spectrum, and the right choice depends on **workload criticality, budget, and contractual commitments**.
+
+---
 
 ## 🗝️ Keywords
 
 > Fault Tolerance (FT), High Availability (HA), VMware FT, Nutanix HCI, Proxmox VE, Hyper-Converged Infrastructure (HCI), Replication Factor (RF2/RF3), Self-Healing Storage, HA Manager, Fencing, SAN, vSAN, Ceph, ZFS, NFS, Cluster Quorum, Infrastructure Resilience, Uptime, Downtime, Continuity of State, Continuity of Service, Mission-Critical Workloads, Scalability, Cost Efficiency, Architectural Trade-offs
-
