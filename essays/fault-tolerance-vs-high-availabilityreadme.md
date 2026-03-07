@@ -316,5 +316,5 @@ Ultimately, this study bridges **theory and practice**, offering a clear way to 
 ---
 
 ✍️ Authored by **Franco [francoameri]**  
-📜 Licensed under [CC BY 4.0](https://github.com/francoameri/francoameri/blob/main/LICENSE.md)
+📜 Licensed under [CC BY 4.0](https://github.com/francoameri/francoameri/blob/main/LICENSE.md)  
 Please credit the original author when sharing or adapting this work.
