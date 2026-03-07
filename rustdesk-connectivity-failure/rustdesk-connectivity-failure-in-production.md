@@ -79,3 +79,9 @@ Choosing ISP isolation preserved continuity and avoided unnecessary complexity.
 
 ## 🚀 Takeaway
 By systematically applying the OSI model and isolating ISP paths, I restored RustDesk connectivity across production PCs. This reduced downtime, preserved business continuity, and demonstrated architect‑level foresight in troubleshooting complex multi‑ISP environments.
+
+---
+
+## 🔑 Keywords
+
+> High Availability, Fault Tolerance, Mesh Topology, Proxmox Virtualization, TrueNAS Storage, OpenWRT Networking, Network Architecture & Design, Project Management (Jira), Cost-Conscious Infrastructure, Scalability & Security Planning, Change Management, SMB Infrastructure Case Study, Enterprise-Grade Resilience, Risk Analysis & Mitigation
