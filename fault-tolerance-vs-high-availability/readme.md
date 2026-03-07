@@ -24,6 +24,8 @@ This document is intended for:
 - **Contextual Boundaries:** Availability percentages (e.g., 99.99% vs 100%) are discussed in theoretical terms and may vary in practice depending on workload type, hardware quality, and operational management.  
 - **Illustrative Examples:** While some examples (e.g., RAID 1 disk mirroring, PSU redundancy, ISP failover with BGP/OSPF) are not strictly tied to hypervisors, they are included to **delimit and clarify the conceptual difference between Fault Tolerance and High Availability**. These analogies help highlight how the two paradigms manifest across different layers of IT infrastructure.
 
+> Having defined the scope and boundaries of this study, the next step is to outline the **methodology** — the structured process by which Fault Tolerance and High Availability are analyzed, compared, and contextualized in both theory and practice.
+
 ---
 
 ## 🧪 Methodology
@@ -120,6 +122,18 @@ Availability targets are often expressed as percentages, translating into downti
 > **FT:** Designed for workloads where *any downtime is unacceptable*.
   
 > **HA:** Designed for workloads where *short interruptions are tolerable* but recovery must be fast.
+
+### 📑 SLA Considerations
+Service Level Agreements (SLAs) formalize availability targets into contractual obligations between providers and clients.  
+
+- **FT in SLA Context:**  
+  Rarely offered as a standard SLA because guaranteeing *absolute zero downtime* is impractical at scale. FT is instead applied selectively to mission-critical workloads (e.g., financial transactions, healthcare systems) where downtime is unacceptable.  
+
+- **HA in SLA Context:**  
+  Commonly reflected in SLAs as 99.9% or 99.99% uptime guarantees. These agreements acknowledge short interruptions but commit to rapid recovery. Penalties or credits may apply if downtime exceeds thresholds.  
+
+- **Strategic Insight:**  
+  SLAs bridge the gap between **technical design** and **business expectations**. Architects must align FT/HA strategies not only with infrastructure capabilities but also with contractual commitments and customer tolerance for downtime.
 
 ---
 
