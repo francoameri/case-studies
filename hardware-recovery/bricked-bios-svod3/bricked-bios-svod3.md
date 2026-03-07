@@ -7,6 +7,11 @@ Using an SVOD3 Programmer, the BIOS firmware was successfully restored.
 
 ---
 
+## 👤 Role & Responsibility
+As an independent Infrastructure Technician, I led advanced hardware recovery beyond standard troubleshooting. This case demonstrates my ability to move past conventional fixes and apply specialized tools to restore critical systems
+
+---
+
 ## 🛑 Problem Statement
 - PC failed to boot: no video, no POST, no beeps.
 - Standard troubleshooting steps (RAM swap, PSU test, CMOS battery removal, spare CPU) did not resolve the issue.
@@ -26,6 +31,11 @@ Using an SVOD3 Programmer, the BIOS firmware was successfully restored.
 - CMOS = settings data (tiny, volatile, battery-backed).
 
 ![Sizes](images/BIOS%20UEFI%20Sizes.png)
+
+---
+
+## 📖 Applied Theory
+Understanding that BIOS firmware resides in SPI flash—not the CMOS settings—was key to identifying the real failure point. This distinction guided the recovery process and prevented wasted effort on configuration resets.
 
 ---
 
@@ -52,16 +62,26 @@ Using an SVOD3 Programmer, the BIOS firmware was successfully restored.
 
 ---
 
+## 🧩 Alternatives Considered
+Other recovery paths included vendor RMA, hot‑flashing with a working board, or replacing the motherboard entirely. Choosing the SVOD3 programmer ensured direct control, faster resolution, and preserved the original hardware.
+
+---
+
 ## ✅ Outcome
 - The PC booted successfully after reflashing the BIOS.
 - Demonstrated that a “dead” motherboard can sometimes be revived with the right tools and methodical troubleshooting.
 
 ---
 
+## 📊 Impact & Quantification
+Reviving the motherboard avoided unnecessary replacement costs and downtime. By restoring functionality, I saved the equivalent of a full hardware swap and reduced turnaround time from days to hours.
+
+---
+
 ## 💡 Lessons Learned
-- **Layered troubleshooting** is critical: exhaust standard checks before moving to advanced recovery.
-- **Firmware vs hardware distinction**: CMOS chip is hardware, BIOS/UEFI is firmware stored on it.
-- **Resilience mindset**: Persistence and creativity are as important as technical skill.
+- Layered troubleshooting prevents premature hardware replacement.
+- Firmware recovery parallels infrastructure recovery: persistence applies across systems.
+- Documenting recovery builds credibility and reproducibility.
 
 ---
 
@@ -71,10 +91,5 @@ Using an SVOD3 Programmer, the BIOS firmware was successfully restored.
 
 ---
 
-## 🤝 Discussion
-Have you ever revived hardware or infrastructure against the odds?  
-Share your experiences or improvements to this workflow!
-
-- 💼 [LinkedIn](https://linkedin.com/in/fameri)  
-- 🌐 [GitHub](https://github.com/francoameri)  
-- ✉️ famerisbraccia@gmail.com  
+## 🚀 Impact Statement
+By methodically diagnosing a bricked BIOS and restoring it with an SVOD3 Programmer, I revived a motherboard that appeared irrecoverable. This not only saved hardware from replacement but also reinforced the value of layered troubleshooting, firmware knowledge, and resilience in infrastructure work. The case demonstrates architect‑level foresight: treating failures as opportunities to design recovery strategies that scale from hardware to enterprise systems.
