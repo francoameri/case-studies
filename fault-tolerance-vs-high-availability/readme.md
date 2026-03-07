@@ -44,7 +44,8 @@ To illustrate the difference between **Fault Tolerance (FT)** and **High Availab
 ---
 
 ### Key Insight
-> **FT examples** are about *instant continuity* — no interruption, no restart.  
+> **FT examples** are about *instant continuity* — no interruption, no restart.
+
 > **HA examples** are about *rapid recovery* — short downtime, restart or reroute.  
 
 This section grounds the theory in everyday infrastructure design, showing how FT and HA manifest across hardware, networking, and virtualization.
@@ -59,7 +60,8 @@ Availability targets are often expressed as percentages, translating into downti
 | **Fault Tolerance (FT)** | 100% uptime | 0 minutes |
 | **High Availability (HA)** | 99.99% uptime | ~52 minutes |
 
-> **FT:** Designed for workloads where *any downtime is unacceptable*.  
+> **FT:** Designed for workloads where *any downtime is unacceptable*.
+  
 > **HA:** Designed for workloads where *short interruptions are tolerable* but recovery must be fast.
 
 ---
@@ -149,11 +151,13 @@ Availability targets are often expressed as percentages, translating into downti
 ## 🔍 Conceptual Comparison
 Although FT and HA are often used interchangeably in casual conversation, their **approaches are diametrically different**:
 
-> **Fault Tolerance:** Prevents downtime entirely by maintaining *continuous execution*. The secondary VM is already running in sync, so failover is instantaneous and invisible.  
+> **Fault Tolerance:** Prevents downtime entirely by maintaining *continuous execution*. The secondary VM is already running in sync, so failover is instantaneous and invisible.
+
 > **High Availability:** Accepts downtime but minimizes it by *recovering quickly*. The VM is restarted on another node, which means memory state is lost but disk state is preserved.  
 
 In essence:  
-> **FT = continuity of state.**  
+> **FT = continuity of state.**
+
 > **HA = continuity of service.**  
 
 This distinction is critical in architectural design. FT is chosen when *zero downtime* is mandatory, while HA is chosen when *short downtime* is acceptable but scalability and cost efficiency are priorities.
@@ -161,7 +165,7 @@ This distinction is critical in architectural design. FT is chosen when *zero do
 ---
 
 ## 🧭 Discussion
-The choice between FT and HA is strategic as much as technical:
+***The choice between FT and HA is strategic as much as technical:***
 - **FT (VMware):** Guarantees uninterrupted execution but at prohibitive cost. Suitable for mission-critical workloads (finance, healthcare).  
 - **HA (Nutanix, Proxmox):** Accepts short downtime but offers scalability and cost efficiency. Suitable for most enterprise workloads.
 
