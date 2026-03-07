@@ -1,8 +1,28 @@
 # Fault Tolerance vs High Availability in Virtualized Infrastructure
 
 ## 📖 Introduction
+
 In modern infrastructure design, **Fault Tolerance (FT)** and **High Availability (HA)** represent two distinct paradigms for resilience. Both aim to mitigate failures, but they differ in continuity, resource requirements, and operational outcomes.  
-This document provides a **comparative study** of FT and HA, combining theoretical analysis with practical case studies in **VMware FT**, **Nutanix HCI**, and **Proxmox VE clusters**.
+
+This document provides a **comparative study** of FT and HA, combining theoretical analysis with practical case studies in **VMware FT**, **Nutanix HCI**, and **Proxmox VE clusters**.  
+
+### 🎯 Aim of the Document
+The purpose of this essay is to present a **theoretical + practical approach** to distinguish both architectural strategies. By analyzing their mechanisms, requirements, and operational outcomes, the study highlights their **pros and cons** to support **decision-making in infrastructure design**. The goal is to help architects, engineers, and IT managers evaluate when to choose FT versus HA, considering budget, scalability, and workload criticality.
+
+### 👥 Target Audience
+This document is intended for:
+- **Infrastructure Architects** seeking to balance resilience, scalability, and cost.  
+- **IT Managers** responsible for operational continuity and budget allocation.  
+- **System Engineers and Technicians** who implement and maintain virtualization clusters.  
+- **Recruiters and Technical Interviewers** interested in evaluating candidates’ ability to reason about architectural trade-offs.  
+
+> By combining academic rigor with practical examples, the essay aims to serve both as an educational resource and a decision-making guide.
+
+### 📌 Scope and Limitations
+- **Scope:** This study focuses on virtualization clusters and hyper-converged infrastructure (HCI) platforms, specifically VMware FT, Nutanix HCI, and Proxmox VE. It examines their operational aims, hardware, network, and storage requirements, as well as their impact on downtime and data integrity.  
+- **Limitations:** The analysis does not extend to broader distributed systems (e.g., global CDN architectures, container orchestration platforms like Kubernetes) or application-level clustering. Instead, it remains within the domain of **infrastructure-level resilience** in virtualized environments.  
+- **Contextual Boundaries:** Availability percentages (e.g., 99.99% vs 100%) are discussed in theoretical terms and may vary in practice depending on workload type, hardware quality, and operational management.  
+- **Illustrative Examples:** While some examples (e.g., RAID 1 disk mirroring, PSU redundancy, ISP failover with BGP/OSPF) are not strictly tied to hypervisors, they are included to **delimit and clarify the conceptual difference between Fault Tolerance and High Availability**. These analogies help highlight how the two paradigms manifest across different layers of IT infrastructure.
 
 ---
 
