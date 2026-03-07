@@ -21,7 +21,7 @@ As an independent Infrastructure Technician, I led advanced hardware recovery be
 
 ---
 
-💾 BIOS/UEFI & CMOS Sizes
+## 💾 BIOS/UEFI & CMOS Sizes
 - BIOS/UEFI firmware is stored on a non-volatile memory chip (often SPI flash).
 - Typical sizes range from 1 MB to 32 MB depending on motherboard generation and vendor.
 - CMOS refers to a small memory area powered by the battery, storing configuration settings (boot order, time/date, hardware parameters).
