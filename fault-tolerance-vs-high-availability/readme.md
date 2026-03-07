@@ -65,6 +65,22 @@ By following this sequence, the essay ensures:
 
 ---
 
+## 📑 Table of Contents
+
+- [Introduction](#-introduction)
+- [Methodology](#-methodology)
+- [Theoretical Framework](#-theoretical-framework)
+- [Practical Examples in IT Infrastructure](#-practical-examples-in-it-infrastructure)
+- [Service Level Expectations](#-service-level-expectations)
+- [Case Studies](#-case-studies)
+- [Comparative Analysis](#-comparative-analysis)
+- [Conceptual Comparison](#-conceptual-comparison)
+- [Discussion](#-discussion)
+- [Conclusion](#-conclusion)
+- [Keywords](#-keywords)
+
+---
+
 ## 🧩 Theoretical Framework
 - 🛡️ **Fault Tolerance (FT):** Systems continue operating seamlessly despite component failure. Achieved by maintaining a secondary execution environment in lockstep with the primary, preserving both disk and memory state.  
   - **Operational Aim:** *100% uptime* — uninterrupted service continuity.  
