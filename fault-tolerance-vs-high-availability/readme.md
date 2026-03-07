@@ -312,3 +312,9 @@ Ultimately, this study bridges **theory and practice**, offering a clear way to 
 ## 🗝️ Keywords
 
 > Fault Tolerance (FT), High Availability (HA), VMware FT, Nutanix HCI, Proxmox VE, Hyper-Converged Infrastructure (HCI), Replication Factor (RF2/RF3), Self-Healing Storage, HA Manager, Fencing, SAN, vSAN, Ceph, ZFS, NFS, Cluster Quorum, Infrastructure Resilience, Uptime, Downtime, Continuity of State, Continuity of Service, Mission-Critical Workloads, Scalability, Cost Efficiency, Architectural Trade-offs
+
+---
+
+✍️ Authored by **Franco Ameri Sbraccia**  
+Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
+Please credit the original author when sharing, adapting, or referencing this work.
