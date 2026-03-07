@@ -315,6 +315,6 @@ Ultimately, this study bridges **theory and practice**, offering a clear way to 
 
 ---
 
-✍️ Authored by **Franco Ameri Sbraccia**  
-Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
-Please credit the original author when sharing, adapting, or referencing this work.
+✍️ Authored by **Franco [francoameri]**  
+📜 Licensed under [CC BY 4.0](../LICENSE.md)  
+Please credit the original author when sharing or adapting this work.
