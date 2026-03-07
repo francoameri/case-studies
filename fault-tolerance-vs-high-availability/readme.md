@@ -73,11 +73,11 @@ By following this sequence, the essay ensures:
 - [Practical Examples in IT Infrastructure](#-practical-examples-in-it-infrastructure)
 - [Service Level Expectations](#-service-level-expectations)
 - [Case Studies](#-case-studies)
-- [Comparative Analysis](#-comparative-analysis)
+- [Comparative Analysis](#️-comparative-analysis)
 - [Conceptual Comparison](#-conceptual-comparison)
 - [Discussion](#-discussion)
 - [Conclusion](#-conclusion)
-- [Keywords](#-keywords)
+- [Keywords](#️-keywords)
 
 ---
 
