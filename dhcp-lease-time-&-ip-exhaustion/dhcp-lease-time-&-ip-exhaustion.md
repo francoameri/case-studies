@@ -58,5 +58,5 @@ Hosts:   510 usable
 
 ---
 
-🌟 Impact Statement
+## 🌟 Impact Statement
 By reconfiguring DHCP lease times and expanding the subnet from /24 to /23, I eliminated recurring APIPA assignments, improved network reliability, and established proactive monitoring practices. This reduced troubleshooting overhead, ensured scalability for future growth, and demonstrated architect‑level foresight in capacity planning.
