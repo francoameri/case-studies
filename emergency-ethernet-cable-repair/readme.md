@@ -59,7 +59,7 @@ In this case, the cable was physically compromised, but replacement wasn’t imm
 - Tested link negotiation until connectivity was restored.
 - Workaround broke TIA‑568A/B norms but was acceptable as a temporary emergency fix.
 
-![Workaround](Workaround.png)
+![Workaround](./images/Workaround.png)
 
 > Cable ended up looking this way after applying the workaround, not respecting the TIA-568A or B norms, but working properly until we could solve the issue in the correct way.
 
