@@ -15,7 +15,7 @@ Each pair has a specific role in carrying signals, and the twisting helps reduce
 - Orange Pair → Commonly used for transmit (TX) in Fast Ethernet
 - Green Pair → Commonly used for receive (RX) in Fast Ethernet
 - Blue Pair → Often used for voice or spare capacity in older standards
-- Brown Pair → Often unused in 100 Mbps, but required in Gigabit Ethernet
+- Brown Pair → Often unused in 100 Mbps, but required in Gigabit Ethernet  
 📌 Key idea:
 - TX = Transmit → sends data out from your device
 - RX = Receive → brings data into your device
