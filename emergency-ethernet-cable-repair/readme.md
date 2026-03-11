@@ -46,8 +46,8 @@ When diagnosing no link / lack of connectivity, the first step is to consider La
 Ethernet requires specific twisted pairs to send and receive data. These are known as TX (Transmit) and RX (Receive) pairs:
 - TX (Transmit): The wires that carry data out from your computer or device.
 - RX (Receive): The wires that carry data into your computer or device.
-In 100BASE‑T (Fast Ethernet), the orange and green pairs are normally used for TX/RX. If one of these conductors is broken, the device can’t properly send or receive signals, so the link fails.
-o confirm this suspicion, I used a cable tester to check continuity across all eight conductors. The tester results showed that one wire in the orange pair was damaged, validating the hypothesis that the link failure was caused by a physical Layer 1 issue.
+In 100BASE‑T (Fast Ethernet), the orange and green pairs are normally used for TX/RX. If one of these conductors is broken, the device can’t properly send or receive signals, so the link fails.  
+To confirm this suspicion, I used a cable tester to check continuity across all eight conductors. The tester results showed that one wire in the orange pair was damaged, validating the hypothesis that the link failure was caused by a physical Layer 1 issue.  
 In this case, the cable was physically compromised, but replacement wasn’t immediately possible. That’s why I repurposed the unused blue and brown pairs to temporarily act as TX/RX — restoring connectivity until a certified cable could be installed.
 
 ![Cable Tester](./images/Cable-tester.jpg)
