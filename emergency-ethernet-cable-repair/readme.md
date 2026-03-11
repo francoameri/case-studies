@@ -39,6 +39,11 @@ When diagnosing no link / lack of connectivity, the first step is to consider La
 - Verify continuity: Each conductor must be functional for the link to negotiate.
 - Identify pair usage: Fast Ethernet (100 Mbps) relies on orange + green pairs for TX/RX. Gigabit Ethernet requires all four pairs.
 - Assess environment: Physical damage, distance, or interference can all cause failures at Layer 1.
+ 📌 **In this case:**
+- The cable tester confirmed the orange pair was damaged, preventing link negotiation.
+- By repurposing the brown pair to act as TX, connectivity was restored.
+- This demonstrates how a **Layer 1 diagnostic mindset** can resolve issues before escalating to higher layers (IP, applications).
+
 
 ---
 
@@ -101,9 +106,9 @@ To diagnose and apply the workaround, I relied on standard cabling tools:
 ---
 
 ## 🛡️ Risk Management Considerations
-• 	Improvisation was necessary in the moment, but it was documented and scheduled for permanent replacement.
-• 	Standards compliance (TIA/EIA‑568) was temporarily broken, but business continuity took priority.
-• 	This case highlights the importance of planning spare cabling routes and auditing structured cabling to reduce reliance on emergency fixes.
+- Improvisation was necessary in the moment, but it was documented and scheduled for permanent replacement.
+- Standards compliance (TIA/EIA‑568) was temporarily broken, but business continuity took priority.
+- This case highlights the importance of planning spare cabling routes and auditing structured cabling to reduce reliance on emergency fixes.
 
 ---
 
@@ -131,8 +136,8 @@ Gigabit Ethernet, by contrast, requires all four pairs, so this workaround would
 ---
 
 ## 🧭 Reflection
-This incident reinforced the importance of understanding cabling standards deeply. Improvisation saved the day, but long‑term reliability depends on compliance and planning.
-As an aspiring architect, I see these cases as proof that infrastructure design must account for both standards and real‑world constraints. Documenting them not only preserves technical lessons but also demonstrates how IT decisions directly impact organizational resilience.
+- This incident reinforced the importance of understanding cabling standards deeply. Improvisation saved the day, but long‑term reliability depends on compliance and planning.
+- As an aspiring architect, I see these cases as proof that infrastructure design must account for both standards and real‑world constraints. Documenting them not only preserves technical lessons but also demonstrates how IT decisions directly impact organizational resilience.
 
 ---
 
