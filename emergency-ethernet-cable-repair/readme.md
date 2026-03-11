@@ -49,7 +49,7 @@ In this case, the cable was physically compromised, but replacement wasn’t imm
 
 ![Failing Cable Layout](./images/TIA-568B.png)
 
-> Failing cable layout: orange pair not working.
+> Standard TIA-568B Layout: orange pair not working.
 
 ---
 
@@ -61,7 +61,7 @@ In this case, the cable was physically compromised, but replacement wasn’t imm
 
 ![Workaround](./images/Workaround.png)
 
-> Cable ended up looking this way after applying the workaround, not respecting the TIA-568A or B norms, but working properly until we could solve the issue in the correct way.
+> Workaround Layout: cable ended up looking this way after applying the workaround, not respecting the TIA-568A or B norms, but working properly until we could solve the issue in the correct way.
 
 > TX pair, in this workaround, ended up being the brown ones, in both ends of the cable; RX par was still green since it wasn't damaged.
 
@@ -75,8 +75,28 @@ In this case, the cable was physically compromised, but replacement wasn’t imm
 
 ---
 
+## ⏱️ Diagnosis and workaround implementation took less than 30 minutes, minimizing downtime.
+
+---
+
+## 🛡️ Risk Management Considerations
+• 	Improvisation was necessary in the moment, but it was documented and scheduled for permanent replacement.
+• 	Standards compliance (TIA/EIA‑568) was temporarily broken, but business continuity took priority.
+• 	This case highlights the importance of planning spare cabling routes and auditing structured cabling to reduce reliance on emergency fixes.
+
+---
+
+## 📚 Why It Worked
+Fast Ethernet (100 Mbps) only requires two pairs (orange + green) for TX/RX. By repurposing the brown pair to substitute for the damaged orange, the link could still negotiate successfully.
+Gigabit Ethernet, by contrast, requires all four pairs, so this workaround would not have been viable in a higher‑speed environment.
+
+---
+
 ## 🏥 Business Impact:
--Restored critical medical connectivity, preventing disruption in patient care.
+- Restored critical medical connectivity, ensuring uninterrupted patient services.
+- Prevented operational downtime in a sensitive environment where wireless fallback was not possible.
+- Demonstrated ability to make fast, informed decisions under pressure, balancing technical improvisation with business continuity.
+- Documented the workaround and flagged it for replacement, showing risk awareness and standards compliance.
 
 ---
 
@@ -85,6 +105,13 @@ In this case, the cable was physically compromised, but replacement wasn’t imm
 - ✅ Critical environments demand creative but responsible improvisation when downtime is unacceptable
 - ✅ Documentation matters: recording the incident ensures others understand both the fix and its limitations
 - ✅ Permanent replacement with certified cabling is always required for compliance and long‑term reliability
+- ✅ Structured cabling audits and spare routes reduce reliance on emergency fixes.
+
+---
+
+## 🧭 Reflection
+This incident reinforced the importance of understanding cabling standards deeply. Improvisation saved the day, but long‑term reliability depends on compliance and planning.
+As an aspiring architect, I see these cases as proof that infrastructure design must account for both standards and real‑world constraints. Documenting them not only preserves technical lessons but also demonstrates how IT decisions directly impact organizational resilience.
 
 ---
 
@@ -102,4 +129,5 @@ It highlights diagnostic reasoning, improvisation, and the importance of standar
 ---
 
 ## 🗝️ Keywords
-Ethernet cable repair, cabling case study, pair substitution, structured cabling, emergency connectivity, medical IT infrastructure, diagnostic workflow, improvisation under constraints, TIA‑568, Ethernet standards, PoE, critical IT environments.
+
+> Ethernet cable repair, cabling case study, pair substitution, structured cabling, emergency connectivity, medical IT infrastructure, diagnostic workflow, improvisation under constraints, TIA‑568, Ethernet standards, PoE, incident response, business continuity
