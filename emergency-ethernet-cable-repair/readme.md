@@ -56,6 +56,15 @@ In this case, the cable was physically compromised, but replacement wasn’t imm
 
 ---
 
+## 🛠️ Tools Used
+To diagnose and apply the workaround, I relied on standard cabling tools:
+- Cable Tester → Verified continuity across all eight conductors and confirmed the orange pair was damaged.
+- RJ45 Crimper → Re‑terminated the cable with the brown pair replacing the damaged orange.
+- RJ45 Connectors → Used fresh connectors to ensure proper alignment and contact.
+- Wire Stripper/Cutter → Prepared the cable ends for re‑termination.
+
+---
+
 ## 🔍 Diagnostic Process
 - Verified cable pinout and continuity.
 - Identified the damaged pair (orange).
