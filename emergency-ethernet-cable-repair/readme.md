@@ -22,6 +22,8 @@ Each pair has a specific role in carrying signals, and the twisting helps reduce
 - Gigabit Ethernet uses all 4 pairs, while Fast Ethernet (100 Mbps) only uses 2 pairs (orange + green).
 - The other 2 pairs (blue + brown) are often reserved for PoE (Power over Ethernet), a technology that allows devices to receive electrical power through the same cable that carries data. Not used in this case.
 
+![EthCable](./images/EthCable.jpg)
+
 ---
 
 ## 🚨 Symptoms Observed
@@ -42,15 +44,26 @@ In this case, the cable was physically compromised, but replacement wasn’t imm
 
 ## 🔍 Diagnostic Process
 - Verified cable pinout and continuity.
-- Identified the damaged pair (orange/green). The orange pair was damaged.
+- Identified the damaged pair (orange).
 - Considered alternatives: repurposing unused pairs (blue/brown) to substitute for the broken conductors.
+
+![Failing Cable Layout](./images/TIA-568B.png)
+
+> Failing cable layout: orange pair not working.
 
 ---
 
 ## 🛠️ Solution Applied
-- Re‑terminated the cable using the blue and brown pairs in place of the damaged orange/green.
+- Re‑terminated the cable using the brown pair in place of the damaged orange.
 - Ensured proper alignment in the RJ45 connector.
 - Tested link negotiation until connectivity was restored.
+- Workaround broke TIA‑568A/B norms but was acceptable as a temporary emergency fix.
+
+![Workaround](Workaround.png)
+
+> Cable ended up looking this way after applying the workaround, not respecting the TIA-568A or B norms, but working properly until we could solve the issue in the correct way.
+
+> TX pair, in this workaround, ended up being the brown ones, in both ends of the cable; RX par was still green since it wasn't damaged.
 
 ---
 
@@ -59,6 +72,11 @@ In this case, the cable was physically compromised, but replacement wasn’t imm
 - Operations continued without interruption
 - The fix held until a certified replacement cable could be installed
 - The solution surprised my boss, who doubted it was possible — but it worked reliably in the short term
+
+---
+
+## 🏥 Business Impact:
+-Restored critical medical connectivity, preventing disruption in patient care.
 
 ---
 
@@ -84,7 +102,4 @@ It highlights diagnostic reasoning, improvisation, and the importance of standar
 ---
 
 ## 🗝️ Keywords
-Ethernet cable repair, cabling case study, pair substitution, structured cabling, emergency connectivity, medical IT infrastructure, diagnostic workflow, improvisation under constraints
-
-
-
+Ethernet cable repair, cabling case study, pair substitution, structured cabling, emergency connectivity, medical IT infrastructure, diagnostic workflow, improvisation under constraints, TIA‑568, Ethernet standards, PoE, critical IT environments.
