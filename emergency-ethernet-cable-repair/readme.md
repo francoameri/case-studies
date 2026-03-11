@@ -73,9 +73,7 @@ In this case, the cable was physically compromised, but replacement wasn’t imm
 - The fix held until a certified replacement cable could be installed
 - The solution surprised my boss, who doubted it was possible — but it worked reliably in the short term
 
----
-
-## ⏱️ Diagnosis and workaround implementation took less than 30 minutes, minimizing downtime.
+> ⏱️ Diagnosis and workaround implementation took less than 30 minutes, minimizing downtime.
 
 ---
 
