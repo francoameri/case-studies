@@ -91,14 +91,14 @@ This document is intended for:
 - [Case Studies in Network Architecture](#-case-studies-in-network-architecture---different-approaches)
 - [Modern Zero Trust Industrial Architecture](#-modern-zero-trust-industrial-architecture)
   - [Default Deny and Default Allow](#-default-deny-and-default-allow--zero-trust-in-it-versus-ot)
-- [Comparative Analysis between IT and OT](#comparative-analysis-between-it-and-ot)
+- [Comparative Analysis between IT and OT](#-comparative-analysis-between-it-and-ot)
 - [Roles and Responsibilities in IT vs OT Infrastructure](#-roles-and-responsibilities-in-it-vs-ot-infrastructure)
 - [Conceptual Comparison](#-conceptual-comparison)
 - [Strategic Visualizations](#-strategic-visualizations)
 - [Discussion: Strategic Implications of Convergence](#-discussion-strategic-implications-of-convergence)
 - [Conclusion](#-conclusion)
-- [Keywords](#keywords)
-
+- [Keywords](#-keywords)
+  
 ---
 
 ## 🧩 Theoretical Framework
