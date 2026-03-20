@@ -344,7 +344,7 @@ Understanding who manages each domain is as important as understanding the techn
 
 ---
 
-🛠 Best Practices Checklist
+## 🛠 Best Practices Checklist
 
 **Implementation Checklist**
 -Define zones and conduits using the Purdue Model.
