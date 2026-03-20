@@ -84,8 +84,31 @@ This document is intended for:
 
 ## 📑 Table of Contents
 
+- [Introduction](#-introduction)
+- [Executive Summary](#-executive-summary)
+- [Aim of the Document](#-aim-of-the-document)
+- [Target Audience](#-target-audience)
+- [Scope and Limitations](#-scope-and-limitations)
+- [Acronym Quick Reference](#-acronym-quick-reference-glossary-recap)
+- [Methodology](#-methodology)
+- [Theoretical Framework](#-theoretical-framework)
+- [Practical Examples in IT and OT Infrastructure](#-practical-examples-in-it-and-ot-infrastructure)
+- [Service Level Expectations](#-service-level-expectations)
+- [Case Studies in Network Architecture](#-case-studies-in-network-architecture---different-approaches)
+- [Protocol Security Risks](#-protocol-security-risks)
+- [Modern Zero Trust Industrial Architecture](#-modern-zero-trust-industrial-architecture)
+- [Comparative Analysis between IT and OT](#-comparative-analysis-between-it-and-ot)
+- [Roles and Responsibilities in IT vs OT Infrastructure](#-roles-and-responsibilities-in-it-vs-ot-infrastructure)
+- [Business Implications](#-business-implications)
+- [Best Practices Checklist](#-best-practices-checklist)
+- [Conceptual Comparison](#-conceptual-comparison)
+- [Strategic Visualizations](#-strategic-visualizations)
+- [Discussion: Strategic Implications of Convergence](#-discussion-strategic-implications-of-convergence)
+- [Future Trends](#-future-trends)
+- [Conclusion](#-conclusion)
+- [References](#-references)
+- [Keywords](#-keywords)
 
-  
 ---
 
 ## 🧩 Theoretical Framework
