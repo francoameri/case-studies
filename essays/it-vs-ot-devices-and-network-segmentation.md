@@ -97,7 +97,7 @@ This document is intended for:
 - [Case Studies in Network Architecture](#-case-studies-in-network-architecture---different-approaches)
 - [Protocol Security Risks](#-protocol-security-risks)
 - [Modern Zero Trust Industrial Architecture](#-modern-zero-trust-industrial-architecture)
-- [Comparative Analysis between IT and OT](#-comparative-analysis-between-it-and-ot)
+- [Comparative Analysis between IT and OT](#comparative-analysis)
 - [Roles and Responsibilities in IT vs OT Infrastructure](#-roles-and-responsibilities-in-it-vs-ot-infrastructure)
 - [Business Implications](#-business-implications)
 - [Best Practices Checklist](#-best-practices-checklist)
@@ -107,9 +107,9 @@ This document is intended for:
 - [Future Trends](#-future-trends)
 - [Conclusion](#-conclusion)
 - [References](#-references)
-- [Keywords](#-keywords)
+- [Keywords](#keywords)
 
----
+---<a id="keywords"></a>
 
 ## 🧩 Theoretical Framework
 
@@ -285,6 +285,7 @@ Many OT protocols such as Modbus, DNP3, and PROFINET were designed decades ago w
 
 ---
 
+<a id="comparative-analysis"></a>
 ## ⚖️ Comparative Analysis between IT and OT
 
 ```
@@ -424,6 +425,7 @@ The fundamental architectural approaches can be distilled as follows:
 
 ---
 
+<a id="keywords"></a>
 ## 🗝️ Keywords
 > Information Technology (IT), Operational Technology (OT), Purdue Model, Zero Trust, Network Segmentation, PLC, SCADA, Industrial DMZ (IDMZ), CIA Triad, AIC Triad, Determinism, Lateral Movement, Industry 4.0, IIoT, Secure Remote Access (SRA), Patch Management, Legacy Systems.
 
