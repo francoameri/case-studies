@@ -405,14 +405,20 @@ The fundamental architectural approaches can be distilled as follows:
 
 ---
 
-## ✅ Conclusion
+## ✅ Conclusion: The Convergence-Security Paradox
 
 > **The purpose of dividing a network between IT and OT is to create a defensible architecture that respects the incompatible needs of data management and process control.**
 
-- Segmentation prevents a simple IT phishing attack from shutting down a power plant.
-- Architect's Decision: Must balance the need for real-time production analytics (convergence) with the absolute requirement for physical safety (separation).
-- As Industry 4.0 evolves, the challenge will be not only to segment IT and OT but to govern them jointly under frameworks that respect both digital innovation and physical safety.
-- Since IT and OT devices - as previously mentioned - communicate via the same Tech Stack, having in mind all the implications shared in this article, careful architecting decisions and segmentation must be addressed.
+Network segmentation is no longer about building walls; it is about **designing intelligent conduits**. As we move away from physical isolation toward logical **Zero Trust Architectures**, the role of the infrastructure architect evolves from a gatekeeper to a facilitator of secure flows.
+The takeaways for modern industrial design are clear:
+
+    **Priority Alignment**: We must accept that a "critical update" in IT is a "production risk" in OT.
+
+    **Logical Rigor**: Using the Purdue Model and IDMZs isn't just a best practice—it is the baseline for preventing lateral movement in an increasingly connected landscape.
+
+    **Human Convergence**: Technical segmentation only succeeds if there is cultural integration between the IT and Engineering teams.
+
+Ultimately, the goal is <ins>**Resilience**</ins>. By respecting the incompatible priorities of the bit and the atom, we build systems that are not only innovative but fundamentally safe.
 
 ---
 
