@@ -17,8 +17,9 @@ This essay explores the architectural imperatives of segmenting IT and OT networ
 
 ## 🎯 Aim of the Document
 
-The purpose of this essay is to present an architectural approach to distinguishing IT and OT networks. 
-By analyzing their distinct performance requirements, security profiles, and management philosophies, the study highlights the necessity of segmentation to support informed decision-making in infrastructure design.
+The purpose of this essay is to present an **architectural approach to distinguishing IT and OT networks**.
+Since both kind of devices share are different and serve a different purpose but, at the same time, they communicate using the same tech-stack - TCP/IP -, they are often connected via the same network.
+By analyzing their distinct performance requirements, security profiles, and management philosophies, the study highlights the **necessity of segmentation** to support informed decision-making in infrastructure design.
 The goal is to help architects and engineers evaluate risk trade-offs when bridging the digital and physical worlds.
 
 > By combining academic rigor with practical examples, the essay aims to serve both as an educational resource and a decision-making guide.
