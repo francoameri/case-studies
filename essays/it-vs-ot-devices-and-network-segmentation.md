@@ -413,6 +413,7 @@ The fundamental architectural approaches can be distilled as follows:
 - Segmentation prevents a simple IT phishing attack from shutting down a power plant.
 - Architect's Decision: Must balance the need for real-time production analytics (convergence) with the absolute requirement for physical safety (separation).
 - As Industry 4.0 evolves, the challenge will be not only to segment IT and OT but to govern them jointly under frameworks that respect both digital innovation and physical safety.
+- Since IT and OT devices - as previously mentioned - communicate via the same Tech Stack, having in mind all the implications shared in this article, careful architecting decisions and segmentation must be addressed.
 
 ---
 
