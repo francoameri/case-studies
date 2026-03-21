@@ -17,11 +17,10 @@ This essay explores the architectural imperatives of segmenting IT and OT networ
 
 ## 🎯 Aim of the Document
 
-The purpose of this essay is to present an **architectural approach to distinguishing IT and OT networks**.  
-Modern Model of **Zero Trust - and sometimes even called "Default-Deny"** - demands *key architectural thinking and decision-making* when designing or rearranging devices inside a network in Industry 4.0.  
-Since both kind of devices are different and serve a different purpose but, at the same time, they <ins>communicate using the same tech-stack - TCP/IP -</ins>, they are often connected via the same network.  
-By analyzing their distinct performance requirements, security profiles, and management philosophies, the study highlights the **necessity of segmentation** to support informed decision-making in infrastructure design.  
-The goal is to help architects and engineers evaluate risk trade-offs when bridging the digital and physical worlds.  
+The myth of the "Air Gap" is dead. In the era of Industry 4.0, the once-distinct worlds of Information Technology (IT) and Operational Technology (OT) have collided, driven by the need for real-time telemetry and cloud-scale analytics.  
+This convergence creates a high-stakes architectural paradox: **How do we enable the flow of data without compromising the safety of physical assets?**
+While both domains <ins>share the same TCP/IP foundation, their heartbeats are different</ins>. IT thrives on data confidentiality and agile updates; OT survives on deterministic timing and unwavering availability.  
+This document analyzes the structural imperatives of segmentation—moving beyond simple firewalls toward a Security-by-Design philosophy that protects both the packet and the plant floor.
 
 > By combining academic rigor with practical examples, the essay aims to serve both as an educational resource and a decision-making guide.
 
