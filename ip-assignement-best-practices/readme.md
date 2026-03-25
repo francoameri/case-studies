@@ -1,7 +1,10 @@
-# 🌐 Choosing the Right IP Assignment Strategy
+# 🌐 Static IP, DHCP Reservation & DHCP: Choosing the Right IP Assignment Strategy
 
-IP address assignment is one of the most fundamental design decisions in any network. The method chosen impacts reliability, scalability, and troubleshooting.  
-While there are many ways to assign IPs, three methods dominate modern practice: Static assignment, Dynamic via DHCP, and DHCP Reservation (Bind).
+This article focuses on the three most fundamental and widely used IP assignment methods in modern infrastructure: Static assignment, Dynamic via DHCP, and DHCP Reservation (Bind).  
+While there are other ways to assign or manage IPs (IPv6 SLAAC, IPAM-driven automation, SDN, container networking, legacy protocols, etc.), those are outside the primary scope here.
+
+The goal is practical: explain when to use each method, highlight operational best practices, and provide actionable guidance for technicians, network administrators, and managers.  
+Expect clear recommendations for small and large environments, configuration hygiene (DHCP scopes and lease times), and common pitfalls to avoid — all aimed at reducing outages and simplifying troubleshooting.
 
 ---
 
