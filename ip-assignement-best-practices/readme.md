@@ -46,6 +46,26 @@ Expect clear recommendations for small and large environments, configuration hyg
     
     Cons: IP churn complicates long‑term logging, monitoring, and access control; risk of pool exhaustion and rogue DHCP servers. Technicians must monitor lease usage and detect rogue servers; Managers should expect lower predictability for device identity. 
 
+
+```
++-------------------------------+----------------+-------------------+--------------------------------------+---------------------------------------------+
+| When to use                   | Predictability | Admin overhead    | Failure modes                        | Quick config notes                          |
++-------------------------------+----------------+-------------------+--------------------------------------+---------------------------------------------+
+| Static IPs                    | High           | High              | Human error; IP collisions; drift    | Manually set on host; exclude from DHCP     |
++-------------------------------+----------------+-------------------+--------------------------------------+---------------------------------------------+
+| DHCP Reservation (Bind)       | High           | Medium            | Stale MACs; NIC replacement; DHCP    | Reservation maps MAC -> fixed-address       |
+|                               |                |                   | server outage                        | (create in dhcpd/Windows DHCP GUI)          |
++-------------------------------+----------------+-------------------+--------------------------------------+---------------------------------------------+
+| Dynamic DHCP                  | Low            | Low               | Scope exhaustion; rogue DHCP; churn  | Configure scope range; set lease times;     |
+|                               |                |                   |                                      | enable redundancy and monitoring            |
++-------------------------------+----------------+-------------------+--------------------------------------+---------------------------------------------+
+| IPAM (management layer)       | N/A (policy)   | Medium            | Drift if not integrated              | Central inventory; integrate with DHCP/DNS  |
++-------------------------------+----------------+-------------------+--------------------------------------+---------------------------------------------+
+| SDN (policy-driven)           | Policy-driven  | High              | Controller failure; integration gaps | Controller assigns policies; integrate with |
+|                               |                |                   |                                      | IPAM/DHCP; design for redundancy            |
++-------------------------------+----------------+-------------------+--------------------------------------+---------------------------------------------+
+```
+
 ---
 
 ## ⚠️ DHCP configuration disclaimer
@@ -62,7 +82,31 @@ Expect clear recommendations for small and large environments, configuration hyg
 
 >Reserve static only for truly immutable infrastructure.
 
->Use dynamic DHCP for scale and flexibility, but pair it with monitoring and IPAM for visibility in corporate environments. 
+>Use dynamic DHCP for scale and flexibility, but pair it with monitoring and IPAM for visibility in corporate environments.
+
+- Example misconfiguration:  
+You reserve static servers in 10.10.20.10–10.10.20.30 but accidentally configure the DHCP scope as range 10.10.20.1 10.10.20.50.
+
+- Resulting symptom:  
+Intermittent connectivity and IP conflicts on critical servers; logs show ARP collisions and users report sporadic service loss.
+
+- Explanation:  
+A DHCP scope that overlaps static addresses lets the DHCP server hand out an IP already assigned to a server. The symptom is intermittent — sometimes the server keeps its IP, sometimes a client gets the same IP and traffic is misdelivered. Prevent by excluding static ranges from DHCP scopes and documenting allocations in IPAM.
+
+---
+
+## 💻 DHCP lifecycle
+
+```
+Client                      DHCP Server
+  |  DHCPDISCOVER  --------> |
+  |                          |  DHCPOFFER
+  |  <-------- DHCPOFFER --- |
+  |  DHCPREQUEST  -------->  |
+  |                          |  DHCPACK
+  |  <-------- DHCPACK ----- |
+  |  (Client configures IP)  |
+````
 
 ---
 
@@ -79,6 +123,18 @@ MAC Addresses (Layer 2):
   **Logical addresses <ins>assigned via manual administration or protocols (DHCP, SLAAC, etc.).</ins>**
   Can change depending on network policies.
   Used for routing and communication across different networks.
+
+```
++----------------------+        +----------------------+
+|   Host A (NIC)       |        |   Router / L3 device |
+|  MAC: 00:11:22:33:44 | <----> |  IP: 10.10.20.1      |
+|  IP: 10.10.20.10     |  L2    |                      |
++----------------------+  Frame +----------------------+
+        ^  ^                            ^
+        |  |                            |
+     MACs are hardware            IPs are logical, routed
+     identifiers (Layer 2)        addresses (Layer 3)
+```
 
 > 📌 Understanding this distinction is critical: DHCP reservations tie Layer 3 IPs to Layer 2 MACs, bridging physical identity with logical addressing.
 
