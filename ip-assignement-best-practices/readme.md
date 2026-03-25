@@ -13,25 +13,37 @@ Expect clear recommendations for small and large environments, configuration hyg
 📌 **- 1. Static Assignment**
 
     Definition: IPs are manually configured on each host.
+    
     Best Practice: Use when devices must never rotate IPs and when DHCP service availability cannot be fully trusted.
+    
     Pros: Absolute address stability; no dependency on DHCP service; simple routing/firewall rules.
+    
     Cons: High administrative cost; prone to mis‑entries and IP collisions if not documented; poor scale for large orgs. Tech roles must maintain authoritative inventory; Managers should know static use increases operational headcount.
 
 🔒 **- 2. DHCP Reservation (Bind)**
 
     Definition: DHCP server reserves a specific IP for a device based on its MAC address. The device always receives the same IP from the pool.
+    
     Best Practice: Ideal for critical endpoints that need consistency but benefit from central DHCP management.
+    
     Examples: Printers, VoIP phones, monitoring systems, or semi-critical servers.
+    
     Pros: Best balance — centralized control with predictable IPs; easy to change centrally; supports automation and DNS integration.
+    
     Cons: Requires accurate MAC tracking; NIC replacement or virtualization can require reservation updates; still reliant on DHCP server availability. Admins should enforce naming/MAC policies; Managers get lower manual overhead than static. 
-    Opinion: This is often the real good practice — balancing automation with predictability.
+    
+> Opinion: This is often the real good practice — balancing automation with predictability.
 
 🔄 **- 3. Dynamic DHCP**
 
     Definition: IPs are automatically assigned from a pool without reservations.
+    
     Best Practice: Use for endpoints and non-critical devices where IP rotation is acceptable.
+    
     Examples: Workstations, laptops, guest devices, IoT endpoints.
+    
     Pros: Scales effortlessly; minimal per‑device work; ideal for transient devices.
+    
     Cons: IP churn complicates long‑term logging, monitoring, and access control; risk of pool exhaustion and rogue DHCP servers. Technicians must monitor lease usage and detect rogue servers; Managers should expect lower predictability for device identity. 
 
 ---
