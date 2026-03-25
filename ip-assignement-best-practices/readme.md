@@ -56,7 +56,9 @@ While there are many ways to assign IPs, three methods dominate modern practice:
 - Practical takeaway
 
 >Default to DHCP Reservation for devices that need stable addresses but benefit from centralized management.
+
 >Reserve static only for truly immutable infrastructure.
+
 >Use dynamic DHCP for scale and flexibility, but pair it with monitoring and IPAM for visibility in corporate environments. 
 
 ---
@@ -66,20 +68,16 @@ While there are many ways to assign IPs, three methods dominate modern practice:
 MAC Addresses (Layer 2):
 
   **Unique hardware identifiers <ins>insassigned at the factory.**</ins>
-
   Burned into the NIC (Network Interface Card).
-
   Used for local network communication and device identification.
 
   IP Addresses (Layer 3):
 
   **Logical addresses <ins>assigned via manual administration or protocols (DHCP, SLAAC, etc.).</ins>**
-
   Can change depending on network policies.
-
   Used for routing and communication across different networks.
 
-📌 Understanding this distinction is critical: DHCP reservations tie Layer 3 IPs to Layer 2 MACs, bridging physical identity with logical addressing.
+> 📌 Understanding this distinction is critical: DHCP reservations tie Layer 3 IPs to Layer 2 MACs, bridging physical identity with logical addressing.
 
 ---
 
