@@ -70,7 +70,7 @@ Expect clear recommendations for small and large environments, configuration hyg
 
 MAC Addresses (Layer 2):
 
-  **Unique hardware identifiers <ins>insassigned at the factory.**</ins>
+  **Unique hardware identifiers <ins>assigned at the factory.**</ins>
   Burned into the NIC (Network Interface Card).
   Used for local network communication and device identification.
 
