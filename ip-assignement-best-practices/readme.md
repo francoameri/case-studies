@@ -1,4 +1,4 @@
-# 🌐 Article: Choosing the Right IP Assignment Strategy
+# 🌐 Choosing the Right IP Assignment Strategy
 
 IP address assignment is one of the most fundamental design decisions in any network. The method chosen impacts reliability, scalability, and troubleshooting.  
 While there are many ways to assign IPs, three methods dominate modern practice: Static assignment, Dynamic via DHCP, and DHCP Reservation (Bind).
