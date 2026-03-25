@@ -114,6 +114,8 @@ MAC Addresses (Layer 2):
 
 ## 🏅 Honorable Mentions for IP Assignment
 
+---
+
 ### 🗂️ IPAM in Corporate Environments
 
 What is IPAM?  
@@ -144,6 +146,8 @@ Cons:
 - Requires investment and training.
 - Adds complexity compared to simple DHCP setups.
 - Can be overkill for small environments.
+
+---
 
 ### 🌐 SDN (Software Defined Networking)
 
