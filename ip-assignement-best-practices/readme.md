@@ -7,7 +7,7 @@ While there are many ways to assign IPs, three methods dominate modern practice:
 
 ## 📌 The Three Core Methods
 
-**- 1. Static Assignment**
+📌 **- 1. Static Assignment**
 
   Definition: IPs are manually configured on each host.
 
@@ -17,7 +17,7 @@ While there are many ways to assign IPs, three methods dominate modern practice:
 
   Cons: High administrative cost; prone to mis‑entries and IP collisions if not documented; poor scale for large orgs. Tech roles must maintain authoritative inventory; Managers should know static use increases operational headcount.
 
-**- 2. DHCP Reservation (Bind)**
+🔒 **- 2. DHCP Reservation (Bind)**
 
   Definition: DHCP server reserves a specific IP for a device based on its MAC address. The device always receives the same IP from the pool.
 
@@ -31,7 +31,7 @@ While there are many ways to assign IPs, three methods dominate modern practice:
 
   Opinion: This is often the real good practice — balancing automation with predictability.
 
-**- 3. Dynamic DHCP**
+🔄 **- 3. Dynamic DHCP**
 
   Definition: IPs are automatically assigned from a pool without reservations.
 
