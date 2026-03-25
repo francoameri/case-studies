@@ -32,7 +32,7 @@ Expect clear recommendations for small and large environments, configuration hyg
     
     Cons: Requires accurate MAC tracking; NIC replacement or virtualization can require reservation updates; still reliant on DHCP server availability. Admins should enforce naming/MAC policies; Managers get lower manual overhead than static. 
     
-> Opinion: This is often the real good practice — balancing automation with predictability.
+> Opinion: This is often the preferred approach — balancing automation with predictability.
 
 🔄 **- 3. Dynamic DHCP**
 
