@@ -26,6 +26,8 @@ This document is intended for:
 
 > Having defined the scope and boundaries of this study, the next step is to outline the **methodology** — the structured process by which Fault Tolerance and High Availability are analyzed, compared, and contextualized in both theory and practice.
 
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
 ---
 
 ## 🧪 Methodology
@@ -63,6 +65,8 @@ By following this sequence, the essay ensures:
 - **Practical relevance:** Real-world case studies and examples that resonate with IT professionals.  
 - **Decision-making support:** Comparative insights that guide architects, engineers, and managers in choosing between FT and HA.  
 
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
 ---
 
 ## 📑 Table of Contents
@@ -73,11 +77,13 @@ By following this sequence, the essay ensures:
 - [Practical Examples in IT Infrastructure](#-practical-examples-in-it-infrastructure)
 - [Service Level Expectations](#-service-level-expectations)
 - [Case Studies](#-case-studies)
-- [Comparative Analysis](#️-comparative-analysis)
+- [Comparative Analysis](#-comparative-analysis)
 - [Conceptual Comparison](#-conceptual-comparison)
 - [Discussion](#-discussion)
 - [Conclusion](#-conclusion)
-- [Keywords](#️-keywords)
+- [Keywords](#-keywords)
+
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 
 ---
 
@@ -93,6 +99,8 @@ By following this sequence, the essay ensures:
   - **HA Manager with Fencing (Proxmox):** Proxmox VE uses corosync and an HA manager to monitor node health. If a node fails, **fencing** isolates it to prevent split-brain scenarios, and the HA manager restarts affected VMs on surviving nodes using shared storage.
 
 > **Key distinction:** FT = *continuity*, HA = *recovery*.
+
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 
 ---
 
@@ -125,6 +133,8 @@ To illustrate the difference between **Fault Tolerance (FT)** and **High Availab
 
 This section grounds the theory in everyday infrastructure design, showing how FT and HA manifest across hardware, networking, and virtualization.
 
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
 ---
 
 ## 📊 Service Level Expectations
@@ -151,6 +161,8 @@ Service Level Agreements (SLAs) formalize availability targets into contractual 
 - **Strategic Insight:**  
   SLAs bridge the gap between **technical design** and **business expectations**. Architects must align FT/HA strategies not only with infrastructure capabilities but also with contractual commitments and customer tolerance for downtime.
 
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
 ---
 
 ## 📚 Case Studies
@@ -174,22 +186,22 @@ Service Level Agreements (SLAs) formalize availability targets into contractual 
 - **Advantages:** Cost-effective, flexible storage, downtime ~60–180s.  
 - **Disadvantages:** No FT, memory state lost, requires careful quorum/fencing setup.  
 
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
 ---
 
 ## ⚖️ Comparative Analysis
 
-```
-| Aspect              | VMware FT                      | Nutanix HCI (HA)             | Proxmox VE (HA)                   |
-|---------------------|--------------------------------|------------------------------|-----------------------------------|
-| **Downtime**        | Zero                           | 30–120s                      | 60–180s                           |
-| **Data Integrity**  | Memory + disk preserved        | Disk preserved, memory lost  | Disk preserved, memory lost       |
-| **Hardware Needs**  | 2× resources per VM, 3+ nodes  | 3–5+ nodes, storage overhead | 3+ nodes, shared storage          |
-| **Cost**            | Very high                      | Moderate to high             | Low to moderate                   |
-| **Scalability**     | Limited                        | High                         | Moderate                          |
-| **Operational Aim** | 100% uptime                    | 99.99% uptime                | 99.99% uptime                     |
-| **Network Needs**   | 10G+, shared datastore access  | 10G+ RT for RF2/RF3          | 1–10G, fencing, shared storage    |
-| **Storage Needs**   | SAN/vSAN, synchronous access   |(RF2/RF3), self-healing       | Ceph, ZFS, NFS, quorum consistency|
-````
+| Aspect | VMware FT | Nutanix HCI (HA) | Proxmox VE (HA) |
+|---|---|---|---|
+| **Downtime** | Zero | 30–120s | 60–180s |
+| **Data Integrity** | Memory + disk preserved | Disk preserved, memory lost | Disk preserved, memory lost |
+| **Hardware Needs** | 2× resources per VM, 3+ nodes | 3–5+ nodes, storage overhead | 3+ nodes, shared storage |
+| **Cost** | Very high | Moderate to high | Low to moderate |
+| **Scalability** | Limited | High | Moderate |
+| **Operational Aim** | 100% uptime | 99.99% uptime | 99.99% uptime |
+| **Network Needs** | 10G+, shared datastore access | 10G+ RT for RF2/RF3 | 1–10G, fencing, shared storage |
+| **Storage Needs** | SAN/vSAN, synchronous access | Distributed storage (RF2/RF3), self-healing | Ceph, ZFS, NFS, quorum consistency |
 
 ### 📝 Comprehensive Explanation of Each Aspect
 
@@ -232,6 +244,8 @@ Service Level Agreements (SLAs) formalize availability targets into contractual 
 - **VMware FT:** Requires a **shared datastore** accessible by both primary and secondary VMs. Typically SAN or vSAN. Storage must support synchronous access so both VMs see identical disk state.  
 - **Nutanix HCI:** Uses **distributed storage** with replication factor (RF2 or RF3). Data is spread across nodes, ensuring redundancy. Self-healing automatically re-replicates data after a failure.  
 - **Proxmox VE:** Relies on **shared storage** (Ceph, ZFS, NFS). Quorum ensures consistency, and fencing prevents split-brain. Storage performance directly impacts HA recovery speed.
+
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 
 ---
 
@@ -279,12 +293,16 @@ This distinction is critical in architectural design. FT is chosen when *zero do
 
 *This diagram illustrates the conceptual difference: FT prevents downtime entirely, while HA accepts short downtime but ensures rapid recovery.*
 
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
 ---
 
 ## 🧭 Discussion
 ***The choice between FT and HA is strategic as much as technical:***
 - **FT (VMware):** Guarantees uninterrupted execution but at prohibitive cost. Suitable for mission-critical workloads (finance, healthcare).  
 - **HA (Nutanix, Proxmox):** Accepts short downtime but offers scalability and cost efficiency. Suitable for most enterprise workloads.
+
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 
 ---
 
@@ -307,11 +325,15 @@ Service Level Agreements (SLAs) are where technical design meets contractual obl
 ### 🌟 Closing Note
 Ultimately, this study bridges **theory and practice**, offering a clear way to distinguish FT and HA and apply them in infrastructure design. Whether read by engineers, architects, or recruiters, the message is the same: resilience is a spectrum, and the right choice depends on **workload criticality, budget, and contractual commitments**.
 
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
 ---
 
-## 🗝️ Keywords
+## 🔑 Keywords
 
 > Fault Tolerance (FT), High Availability (HA), VMware FT, Nutanix HCI, Proxmox VE, Hyper-Converged Infrastructure (HCI), Replication Factor (RF2/RF3), Self-Healing Storage, HA Manager, Fencing, SAN, vSAN, Ceph, ZFS, NFS, Cluster Quorum, Infrastructure Resilience, Uptime, Downtime, Continuity of State, Continuity of Service, Mission-Critical Workloads, Scalability, Cost Efficiency, Architectural Trade-offs
+
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 
 ---
 

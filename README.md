@@ -16,8 +16,8 @@ The goal of this repository is to:
 
 ## 📂 Structure
 - **hardware-recovery/** → Stories of hardware-level fixes (e.g., BIOS recovery, component diagnostics).
-- **infrastructure-troubleshooting/** → Case studies on OS, storage, and network issues.
-- **automation-experiments/** → Examples of Infrastructure as Code, scripting, and orchestration.
+- **essays/** → Long-form comparative studies (Fault Tolerance vs High Availability, IT vs OT network segmentation).
+- **dhcp-lease-time-&-ip-exhaustion/**, **emergency-ethernet-cable-repair/**, **ip-assignement-best-practices/**, **rustdesk-connectivity-failure/** → Individual case studies on real network and infrastructure troubleshooting.
 
 ---
 
@@ -34,6 +34,21 @@ By documenting these cases, this repository demonstrates:
 - Persistence and creativity under pressure.
 - Transferable problem-solving skills across hardware and infrastructure.
 - A trajectory toward infrastructure architecture, where resilience and design thinking matter most.
+
+---
+
+## 📝 License
+
+All content in this repository is shared under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+
+You are free to:
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+- **Attribution** — Please give appropriate credit to **Franco [francoameri]** as the original author, provide a link to this repository, and indicate if changes were made.
+
+🔗 Full license text: [LICENSE.md](https://github.com/francoameri/francoameri/blob/main/LICENSE.md)
 
 ---
 
