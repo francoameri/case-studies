@@ -547,7 +547,7 @@ I don’t claim to have all the answers — every network has its own constraint
 
 ## 🔑 Keywords
 
-> IP assignment, static IP, dynamic DHCP, DHCP reservation, IPAM, infrastructure design, network resilience, automation, Layer 3 troubleshooting, enterprise networking
+`IP assignment` · `static IP` · `dynamic DHCP` · `DHCP reservation` · `IPAM` · `infrastructure design` · `network resilience` · `automation` · `Layer 3 troubleshooting` · `enterprise networking`
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 

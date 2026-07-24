@@ -110,7 +110,7 @@ By reconfiguring DHCP lease times and expanding the subnet from /24 to /23, I el
 
 ## 🔑 Keywords
 
-> APIPA Troubleshooting, DHCP Exhaustion, IP Address Management (IPAM), Lease Time Optimization, Subnet Expansion (/24 to /23), VLSM (Variable Length Subnet Masking), Network Scalability, Capacity Planning, Infrastructure Reliability, Root Cause Analysis, Risk Mitigation, Production Network Case Study
+`APIPA Troubleshooting` · `DHCP Exhaustion` · `IP Address Management (IPAM)` · `Lease Time Optimization` · `Subnet Expansion (/24 to /23)` · `VLSM (Variable Length Subnet Masking)` · `Network Scalability` · `Capacity Planning` · `Infrastructure Reliability` · `Root Cause Analysis` · `Risk Mitigation` · `Production Network Case Study`
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 

@@ -144,7 +144,7 @@ By methodically diagnosing a bricked BIOS and restoring it with an SVOD3 Program
 
 ## 🔑 Keywords
 
-> BIOS Recovery, UEFI Firmware, CMOS Settings, SPI Flash Programming, SVOD3 Programmer, Hardware Troubleshooting, Firmware Restoration, Infrastructure Technician Case Study, Advanced Diagnostics, Motherboard Repair, Risk Mitigation, Cost Avoidance, Layered Troubleshooting, Resilience in Infrastructure
+`BIOS Recovery` · `UEFI Firmware` · `CMOS Settings` · `SPI Flash Programming` · `SVOD3 Programmer` · `Hardware Troubleshooting` · `Firmware Restoration` · `Infrastructure Technician Case Study` · `Advanced Diagnostics` · `Motherboard Repair` · `Risk Mitigation` · `Cost Avoidance` · `Layered Troubleshooting` · `Resilience in Infrastructure`
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 

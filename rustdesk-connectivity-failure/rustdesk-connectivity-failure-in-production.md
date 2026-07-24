@@ -125,7 +125,7 @@ By systematically applying the OSI model and isolating ISP paths, I restored Rus
 
 ## 🔑 Keywords
 
-> RustDesk, Remote Access Troubleshooting, OSI Model, Layer 3 Network Troubleshooting, Layer 7 Application Troubleshooting, ISP Routing Fault Isolation, Multi-ISP High Availability, Business Continuity, Root Cause Analysis, SMB Production Troubleshooting, WAN Routing, Remote Desktop Connectivity, Incident Documentation
+`RustDesk` · `Remote Access Troubleshooting` · `OSI Model` · `Layer 3 Network Troubleshooting` · `Layer 7 Application Troubleshooting` · `ISP Routing Fault Isolation` · `Multi-ISP High Availability` · `Business Continuity` · `Root Cause Analysis` · `SMB Production Troubleshooting` · `WAN Routing` · `Remote Desktop Connectivity` · `Incident Documentation`
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 

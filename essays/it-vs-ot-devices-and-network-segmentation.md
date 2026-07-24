@@ -452,7 +452,8 @@ Ultimately, the goal is <ins>**Resilience**</ins>. By respecting the incompatibl
 ---
 
 ## 🔑 Keywords
-> Information Technology (IT), Operational Technology (OT), Purdue Model, Zero Trust, Network Segmentation, PLC, SCADA, Industrial DMZ (IDMZ), CIA Triad, AIC Triad, Determinism, Lateral Movement, Industry 4.0, IIoT, Secure Remote Access (SRA), Patch Management, Legacy Systems.
+
+`Information Technology (IT)` · `Operational Technology (OT)` · `Purdue Model` · `Zero Trust` · `Network Segmentation` · `PLC` · `SCADA` · `Industrial DMZ (IDMZ)` · `CIA Triad` · `AIC Triad` · `Determinism` · `Lateral Movement` · `Industry 4.0` · `IIoT` · `Secure Remote Access (SRA)` · `Patch Management` · `Legacy Systems`
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 

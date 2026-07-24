@@ -211,7 +211,7 @@ It highlights diagnostic reasoning, improvisation, and the importance of standar
 
 ## 🔑 Keywords
 
-> Ethernet cable repair, cabling case study, pair substitution, structured cabling, emergency connectivity, medical IT infrastructure, diagnostic workflow, improvisation under constraints, TIA‑568, Ethernet standards, PoE, incident response, business continuity
+`Ethernet cable repair` · `cabling case study` · `pair substitution` · `structured cabling` · `emergency connectivity` · `medical IT infrastructure` · `diagnostic workflow` · `improvisation under constraints` · `TIA‑568` · `Ethernet standards` · `PoE` · `incident response` · `business continuity`
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 
