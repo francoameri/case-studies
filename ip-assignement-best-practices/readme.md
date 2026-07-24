@@ -19,6 +19,7 @@ Expect clear recommendations for small and large environments, configuration hyg
 - [Honorable Mentions for IP Assignment](#-honorable-mentions-for-ip-assignment)
 - [Disclaimer](#️-disclaimer)
 - [Best Practices for IP Assignment](#-best-practices-for-ip-assignment)
+- [Related Scripts](#️-related-scripts)
 - [Conclusion](#-conclusion)
 - [Keywords](#-keywords)
 
@@ -529,6 +530,21 @@ Security and governance
 
 This Best Practices section is intended to be practical and actionable. It balances the needs of technicians who implement and troubleshoot networks with the oversight managers need to plan capacity and control risk.  
 Apply these recommendations incrementally: start with clear documentation and DHCP scope hygiene, then add reservations, IPAM, and SDN as your operational maturity grows.
+
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
+---
+
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
+---
+
+## 🛠️ Related Scripts
+
+The best-practice checks described above are automatable rather than purely manual. Two scripts in [`scripts/`](./scripts/) turn the recurring parts of this article into repeatable tools:
+
+- **[`check_dhcp_overlap.py`](./scripts/check_dhcp_overlap.py)** — checks a static IP range against a DHCP scope for overlap, catching the exact misconfiguration walked through in the [Example misconfiguration](#-dhcp-configuration-disclaimer) above (a static block accidentally left inside a live scope, causing intermittent ARP collisions). Supports single-range checks or a CSV of multiple allocations at once.
+- **[`Check-DhcpScopeUtilization.ps1`](./scripts/Check-DhcpScopeUtilization.ps1)** — audits Windows DHCP scope utilization and flags anything approaching exhaustion, automating the "monitor lease utilization, set alerts for exhaustion" recommendation from the Best Practices section. Requires the `DhcpServer` PowerShell module (built into Windows Server, or installable via RSAT).
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 

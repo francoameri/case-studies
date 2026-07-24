@@ -12,6 +12,7 @@
 - [Impact & Quantification](#-impact--quantification)
 - [Lessons Learned](#-lessons-learned)
 - [Takeaway](#-takeaway)
+- [Related Script](#️-related-script)
 - [Keywords](#-keywords)
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
@@ -118,6 +119,14 @@ Choosing ISP isolation preserved continuity and avoided unnecessary complexity.
 
 ## 🚀 Takeaway
 By systematically applying the OSI model and isolating ISP paths, I restored RustDesk connectivity across production PCs. This reduced downtime, preserved business continuity, and demonstrated architect‑level foresight in troubleshooting complex multi‑ISP environments.
+
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
+---
+
+## 🛠️ Related Script
+
+[`test-multiwan-paths.sh`](./scripts/test-multiwan-paths.sh) automates the isolation process this resolution relied on — instead of physically disconnecting each ISP in turn, it routes a test through each gateway individually and reports packet loss/latency per path, flagging the one with broken routing directly.
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 

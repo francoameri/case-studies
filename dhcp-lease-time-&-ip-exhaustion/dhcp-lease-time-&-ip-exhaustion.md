@@ -9,6 +9,7 @@
 - [Theory: Subnetting & VLSM](#-theory-subnetting--vlsm)
 - [Lessons Learned](#-lessons-learned)
 - [Impact Statement](#-impact-statement)
+- [Related Script](#️-related-script)
 - [Keywords](#-keywords)
 
 ---
@@ -103,6 +104,14 @@ Hosts:   510 usable
 
 ## 🌟 Impact Statement
 By reconfiguring DHCP lease times and expanding the subnet from /24 to /23, I eliminated recurring APIPA assignments, improved network reliability, and established proactive monitoring practices. This reduced troubleshooting overhead, ensured scalability for future growth, and demonstrated architect‑level foresight in capacity planning.
+
+<div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
+
+---
+
+## 🛠️ Related Script
+
+[`Find-ApipaHosts.ps1`](./scripts/Find-ApipaHosts.ps1) automates the diagnostic signal this case study started with — spotting devices that have fallen back to a 169.254.x.x address. It checks the local ARP cache by default, or can actively sweep a subnet first (`-Sweep -SubnetCidr`) to catch a DHCP failure as it's happening rather than relying on a stale ARP entry.
 
 <div align="right"><a href="#-table-of-contents">↑ Back to top</a></div>
 
